@@ -1,22 +1,96 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+.formulario{
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #218838;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    background-color: #0d6efd;
+    color: white;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#estadisticas{
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
 #memoria{
-    width:250px;
-    border:2px solid black;
-    margin-top:20px;
+    width: 250px;
+    border: 3px solid white;
+    margin-top: 20px;
+    background: white;
 }
 
 .bloque{
-    border-bottom:1px solid black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    font-weight:bold;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: black;
 }
 
 .libre{
-    background:#c8f7c5;
+    background: #c8f7c5;
 }
 
 .ocupada{
-    background:#ffb3b3;
+    background: #ffb3b3;
 }

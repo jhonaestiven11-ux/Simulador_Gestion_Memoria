@@ -1,23 +1,22 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 30px;
+#memoria{
+    width:250px;
+    border:2px solid black;
+    margin-top:20px;
 }
 
-table{
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th,td{
-    border:1px solid black;
-    padding:10px;
+.bloque{
+    border-bottom:1px solid black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
+    font-weight:bold;
 }
 
-button{
-    padding:8px;
+.libre{
+    background:#c8f7c5;
 }
 
-input{
-    padding:8px;
+.ocupada{
+    background:#ffb3b3;
 }

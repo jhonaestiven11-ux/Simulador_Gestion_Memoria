@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Simulador Best Fit</title>
+    <title>Simulador de Gestión de Memoria</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-    <h1>Simulador de Memoria - Mejor Ajuste</h1>
+    <h1>Simulador de Memoria - Best Fit</h1>
 
     <div class="formulario">
         <input type="text" id="nombre" placeholder="Nombre tarea">
@@ -28,12 +28,64 @@
                 <th>Estado</th>
                 <th>Tarea</th>
                 <th>Fragmentación</th>
+                <th>Acción</th>
             </tr>
         </thead>
 
-        <tbody id="tablaMemoria">
-        </tbody>
+        <tbody id="tablaMemoria"></tbody>
     </table>
+
+    <h2>Estadísticas</h2>
+    <p id="estadisticas"></p>
+
+    <h2>Memoria</h2>
+    <div id="memoria"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Gestión de Memoria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Simulador de Memoria - Best Fit</h1>
+
+    <div class="formulario">
+        <input type="text" id="nombre" placeholder="Nombre tarea">
+
+        <input type="number" id="tamano" placeholder="Tamaño KB">
+
+        <button onclick="agregarTarea()">
+            Agregar Tarea
+        </button>
+    </div>
+
+    <h2>Tabla de Memoria</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Partición</th>
+                <th>Estado</th>
+                <th>Tarea</th>
+                <th>Fragmentación</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaMemoria"></tbody>
+    </table>
+
+    <h2>Estadísticas</h2>
+    <p id="estadisticas"></p>
+
+    <h2>Memoria</h2>
+    <div id="memoria"></div>
 
     <script src="script.js"></script>
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador Best Fit</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>Simulador de Memoria - Mejor Ajuste</h1>
+
+    <div class="formulario">
+        <input type="text" id="nombre" placeholder="Nombre tarea">
+
+        <input type="number" id="tamano" placeholder="Tamaño KB">
+
+        <button onclick="agregarTarea()">
+            Agregar Tarea
+        </button>
+    </div>
+
+    <h2>Tabla de Memoria</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Partición</th>
+                <th>Estado</th>
+                <th>Tarea</th>
+                <th>Fragmentación</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaMemoria">
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

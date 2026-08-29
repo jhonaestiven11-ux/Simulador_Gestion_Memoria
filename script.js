@@ -1,3 +1,4 @@
+
 const particiones = [
     { id: 1, tamaño: 10, libre: true, tarea: null },
     { id: 2, tamaño: 15, libre: true, tarea: null },
@@ -53,8 +54,28 @@ function agregarTarea() {
     const tamaño =
         Number(document.getElementById("tamano").value);
 
-    if (!nombre || tamaño <= 0) {
-        alert("Ingrese datos válidos");
+    if (!nombre) {
+        alert("Ingrese un nombre para la tarea");
+        return;
+    }
+
+    if (isNaN(tamaño)) {
+        alert("Ingrese un tamaño válido");
+        return;
+    }
+
+    if (tamaño <= 0) {
+        alert("El tamaño debe ser mayor que 0");
+        return;
+    }
+
+    const maxParticion =
+        Math.max(...particiones.map(p => p.tamaño));
+
+    if (tamaño > maxParticion) {
+        alert(
+            `El tamaño máximo permitido es ${maxParticion} KB`
+        );
         return;
     }
 
@@ -167,3 +188,4 @@ function dibujarMemoria() {
 }
 
 mostrarTabla();
+
